@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 &ndash; Dynamic Web Fundamentals &ndash; Tatafdzwa Kahwai</title>
+  <meta
+    name="description"
+    content="WDD 131 - Dynamic Web Fundamentals landing page for Tatafdzwa Kahwai featuring personal information, Zimbabwe highlights, course links, and web development resources."
+  >
+  <meta name="author" content="Tatafdzwa Kahwai">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+    <nav>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank" rel="noreferrer">Canvas</a>
+      <a
+        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Scripture
+      </a>
+      <a href="final-project/" aria-label="Final project placeholder link">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Tatafdzwa Kahwai</h1>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="intro">
+          <p>
+            My name is Tatafdzwa Kahwai. I am a focused learner with an interest in building
+            practical digital skills and improving my understanding of web development through
+            hands-on projects.
+          </p>
+          <p>
+            I value steady growth, problem solving, and creating work that is clear, useful, and
+            well organized. This course page represents my progress as I develop stronger skills
+            in HTML, CSS, and JavaScript.
+          </p>
+        </div>
+        <img
+          src="images/1760014559324.jpg"
+          alt="Illustrated portrait representing Tatafdzwa Kahwai"
+          width="240"
+          height="240"
+        >
+      </div>
+
+      <div class="location">
+        <h3>Harare, Zimbabwe</h3>
+        <div class="location-content">
+          <figure>
+            <img
+              src="images/zimbabwe-flag.svg"
+              alt="Flag of Zimbabwe"
+              width="220"
+              height="132"
+            >
+            <figcaption>Official Flag of Zimbabwe</figcaption>
+          </figure>
+          <p>
+            Harare is Zimbabwe&apos;s capital city and a major center for business, culture, and
+            education. It is known for its tree-lined avenues, warm climate, and position as a
+            gateway to the country&apos;s national parks and historic landmarks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card resources-card">
+      <h2>Web Dev Resources</h2>
+      <ul class="resource-list">
+        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noreferrer">MDN Web Docs</a></li>
+        <li><a href="https://css-tricks.com/" target="_blank" rel="noreferrer">CSS-Tricks</a></li>
+        <li><a href="https://web.dev/" target="_blank" rel="noreferrer">web.dev</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noreferrer">W3Schools</a></li>
+        <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noreferrer">freeCodeCamp</a></li>
+        <li><a href="https://coolors.co/" target="_blank" rel="noreferrer">Coolors</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Tatafdzwa Kahwai | Zimbabwe</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

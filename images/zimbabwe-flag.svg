@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 198" role="img" aria-labelledby="title desc">
+  <title id="title">Flag of Zimbabwe</title>
+  <desc id="desc">A simplified local SVG of the Zimbabwe flag.</desc>
+  <rect width="330" height="198" fill="#ffffff"/>
+  <rect x="98" width="232" height="28.2857" fill="#1f8a3b"/>
+  <rect x="98" y="28.2857" width="232" height="28.2857" fill="#f4c430"/>
+  <rect x="98" y="56.5714" width="232" height="28.2857" fill="#c93131"/>
+  <rect x="98" y="84.8571" width="232" height="28.2857" fill="#111111"/>
+  <rect x="98" y="113.1428" width="232" height="28.2857" fill="#c93131"/>
+  <rect x="98" y="141.4285" width="232" height="28.2857" fill="#f4c430"/>
+  <rect x="98" y="169.7142" width="232" height="28.2858" fill="#1f8a3b"/>
+  <polygon points="0,99 98,0 98,198" fill="#ffffff" stroke="#111111" stroke-width="4"/>
+  <polygon points="18,99 77,37 77,161" fill="#e33b3b"/>
+  <circle cx="51" cy="99" r="16" fill="#f4c430"/>
+  <path d="M51 76l6 17h17L60 103l5 17-14-10-14 10 5-17-14-10h17Z" fill="#f4c430"/>
+</svg>
