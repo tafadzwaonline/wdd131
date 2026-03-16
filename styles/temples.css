@@ -1,11 +1,8 @@
-:root {
+.temple-page {
   --album-purple: #4f147b;
   --album-purple-dark: #3e0f63;
   --album-text: #151515;
   --album-caption: #5b1d83;
-}
-
-body {
   background: #ffffff;
   color: var(--album-text);
 }
@@ -86,13 +83,13 @@ body {
   outline: none;
 }
 
-main {
+.temple-page main {
   width: min(1100px, calc(100% - 2rem));
   margin: 1.75rem auto 2.5rem;
   display: block;
 }
 
-h1 {
+.temple-page h1 {
   margin: 0 0 1.25rem;
   color: #111111;
   text-align: center;
@@ -136,7 +133,7 @@ h1 {
   font-weight: 400;
 }
 
-footer {
+.temple-page footer {
   width: min(1100px, calc(100% - 1rem));
   margin: 0 auto 1rem;
   padding: 0.6rem 1rem;
@@ -144,12 +141,12 @@ footer {
   color: #ffffff;
 }
 
-footer p {
+.temple-page footer p {
   margin: 0.12rem 0;
   font-size: 0.72rem;
   line-height: 1.2;
 }
 
-#lastModified {
+.temple-page #lastModified {
   color: #f4d8ff;
 }
