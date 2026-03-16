@@ -1,0 +1,59 @@
+@media (min-width: 720px) {
+  .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.9rem;
+  }
+
+  .header-top {
+    flex: 0 0 auto;
+    padding: 0.85rem 0;
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .primary-nav {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.35rem;
+    padding: 0;
+    background: transparent;
+  }
+
+  .nav-link {
+    width: auto;
+    padding: 0.5rem 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  main {
+    margin-top: 1rem;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.4rem 1.1rem;
+  }
+
+  .gallery figure {
+    max-width: 260px;
+  }
+
+  .gallery figcaption {
+    font-size: 0.72rem;
+  }
+}

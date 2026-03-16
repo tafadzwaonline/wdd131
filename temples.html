@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album | WDD 131</title>
+  <meta name="description" content="A responsive temple album using CSS Grid, Flexbox, and a mobile hamburger navigation menu.">
+  <meta name="author" content="Tatafdzwa Kahwai">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <div class="header-top">
+      <span class="site-title">Temple Album</span>
+      <button
+        id="nav-toggle"
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open navigation menu"
+      >
+        <span class="icon" aria-hidden="true">&#9776;</span>
+      </button>
+    </div>
+
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">Old</a>
+      <a href="#" class="nav-link">New</a>
+      <a href="#" class="nav-link">Large</a>
+      <a href="#" class="nav-link">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="gallery">
+      <figure>
+        <img src="images/aba_nigeria_temple_lds.jpeg" alt="Aba Nigeria Temple" width="320" height="220">
+        <figcaption>Aba Nigeria Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/accra_ghana_temple_lds.jpeg" alt="Accra Ghana Temple" width="320" height="220">
+        <figcaption>Accra Ghana Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare_zimbabwe_temple_exterior_rendering.jpeg" alt="Harare Zimbabwe Temple" width="320" height="220">
+        <figcaption>Harare Zimbabwe Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/johannesburg_south_africa_temple_lds.jpeg" alt="Johannesburg South Africa Temple" width="320" height="220">
+        <figcaption>Johannesburg South Africa Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/kinshasa_temple.jpeg" alt="Kinshasa Democratic Republic of the Congo Temple" width="320" height="220">
+        <figcaption>Kinshasa DR Congo Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/nairobi_kenya_temple_exterior.jpeg" alt="Nairobi Kenya Temple" width="320" height="220">
+        <figcaption>Nairobi Kenya Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/rome_italy_temple.jpeg" alt="Rome Italy Temple" width="320" height="220">
+        <figcaption>Rome Italy Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/salt_lake_temple_lds.jpeg" alt="Salt Lake Temple" width="320" height="220">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/tokyo_japan_temple.jpeg" alt="Tokyo Japan Temple" width="320" height="220">
+        <figcaption>Tokyo Japan Temple</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Tatafdzwa Kahwai | Zimbabwe</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

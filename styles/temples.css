@@ -1,0 +1,155 @@
+:root {
+  --album-purple: #4f147b;
+  --album-purple-dark: #3e0f63;
+  --album-text: #151515;
+  --album-caption: #5b1d83;
+}
+
+body {
+  background: #ffffff;
+  color: var(--album-text);
+}
+
+.page-header {
+  width: min(1100px, calc(100% - 1rem));
+  margin: 0.5rem auto 0;
+  background: var(--album-purple);
+  box-shadow: none;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 0.85rem 0.8rem;
+}
+
+.site-title {
+  color: #ffffff;
+  font-family: "Outfit", Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.nav-toggle {
+  width: auto;
+  height: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1;
+  box-shadow: none;
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus-visible {
+  background: transparent;
+  transform: none;
+}
+
+.primary-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding: 0 0 0.75rem;
+  background: var(--album-purple);
+  border-bottom: none;
+}
+
+.primary-nav.open {
+  display: flex;
+}
+
+.nav-link {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 0;
+  background: transparent;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  background: var(--album-purple-dark);
+  color: #ffffff;
+  transform: none;
+  outline: none;
+}
+
+main {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 1.75rem auto 2.5rem;
+  display: block;
+}
+
+h1 {
+  margin: 0 0 1.25rem;
+  color: #111111;
+  text-align: center;
+  font-family: "Outfit", Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 1.75rem;
+}
+
+.gallery figure {
+  width: 100%;
+  max-width: 320px;
+  margin: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 320 / 220;
+  object-fit: cover;
+}
+
+.gallery figcaption {
+  margin-top: 0.35rem;
+  padding: 0;
+  background: transparent;
+  color: var(--album-caption);
+  text-align: center;
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+footer {
+  width: min(1100px, calc(100% - 1rem));
+  margin: 0 auto 1rem;
+  padding: 0.6rem 1rem;
+  background: var(--album-purple);
+  color: #ffffff;
+}
+
+footer p {
+  margin: 0.12rem 0;
+  font-size: 0.72rem;
+  line-height: 1.2;
+}
+
+#lastModified {
+  color: #f4d8ff;
+}
