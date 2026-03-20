@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Zimbabwe | WDD 131</title>
+  <meta
+    name="description"
+    content="A responsive country page featuring Zimbabwe with a hero image, key facts, and a weather summary."
+  >
+  <meta name="author" content="Tatafdzwa Kahwai">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <h1>Zimbabwe</h1>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Scenic view of Zimbabwe">
+      <picture>
+        <source
+          srcset="images/zimbabwe-hero-small.webp 600w, images/zimbabwe-hero-large.webp 1200w"
+          sizes="100vw"
+          type="image/webp"
+        >
+        <img
+          src="images/harare_temple.jpeg"
+          srcset="images/harare_temple.jpeg 800w"
+          sizes="100vw"
+          alt="A bright daytime view representing Harare, Zimbabwe"
+          width="800"
+          height="633"
+        >
+      </picture>
+    </section>
+
+    <div class="content-grid">
+      <section class="info-card data-card">
+        <h2>Data</h2>
+        <dl>
+          <div>
+            <dt>Capital:</dt>
+            <dd>Harare</dd>
+          </div>
+          <div>
+            <dt>Population:</dt>
+            <dd>16.7 million</dd>
+          </div>
+          <div>
+            <dt>Languages:</dt>
+            <dd>English, Shona, Ndebele</dd>
+          </div>
+          <div>
+            <dt>Currency:</dt>
+            <dd>Zimbabwe Gold (ZiG)</dd>
+          </div>
+          <div>
+            <dt>Time Zone:</dt>
+            <dd>UTC +2</dd>
+          </div>
+          <div>
+            <dt>Famous For:</dt>
+            <dd>Victoria Falls, balancing rocks, wildlife, and rich culture</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="info-card weather-card">
+        <h2>Weather</h2>
+        <img
+          class="weather-icon"
+          src="images/weather-partly-cloudy.svg"
+          alt="Partly cloudy weather icon"
+          width="72"
+          height="72"
+        >
+        <dl>
+          <div>
+            <dt>Temperature:</dt>
+            <dd><span id="temperature">8</span> &deg;C</dd>
+          </div>
+          <div>
+            <dt>Conditions:</dt>
+            <dd>Partly Cloudy</dd>
+          </div>
+          <div>
+            <dt>Wind:</dt>
+            <dd><span id="wind-speed">12</span> km/h</dd>
+          </div>
+          <div>
+            <dt>Wind Chill:</dt>
+            <dd><span id="wind-chill">Loading...</span></dd>
+          </div>
+        </dl>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Tatafdzwa Kahwai | Zimbabwe</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

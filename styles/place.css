@@ -1,0 +1,128 @@
+:root {
+  --zim-green: #1d6d42;
+  --zim-gold: #f0b323;
+  --zim-red: #c4332e;
+  --zim-ink: #152028;
+  --zim-surface: #fffaf0;
+  --zim-surface-strong: rgba(255, 250, 240, 0.96);
+  --zim-border: #d9c59b;
+  --zim-shadow: 0 18px 40px rgba(21, 32, 40, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", Arial, sans-serif;
+  color: var(--zim-ink);
+  background:
+    linear-gradient(180deg, rgba(29, 109, 66, 0.12), transparent 14rem),
+    #f6f1e6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header {
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, var(--zim-green), #0d3f27);
+  border-bottom: 0.4rem solid var(--zim-gold);
+}
+
+.page-header h1 {
+  margin: 0;
+  font-family: "Outfit", Arial, sans-serif;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+main {
+  padding-bottom: 2rem;
+}
+
+.hero picture,
+.hero img {
+  display: block;
+  width: 100%;
+}
+
+.hero img {
+  min-height: 240px;
+  object-fit: cover;
+}
+
+.content-grid {
+  width: min(100% - 1.5rem, 1100px);
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.info-card {
+  margin-bottom: 1rem;
+  padding: 1.25rem;
+  background: var(--zim-surface-strong);
+  border: 1px solid var(--zim-border);
+  border-radius: 1rem;
+  box-shadow: var(--zim-shadow);
+}
+
+.info-card h2 {
+  margin: 0 0 1rem;
+  font-family: "Outfit", Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #0d3f27;
+  text-align: center;
+}
+
+.weather-icon {
+  margin: 0 auto 0.75rem;
+}
+
+dl {
+  margin: 0;
+}
+
+dl div {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 0.35rem 0.75rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(21, 32, 40, 0.08);
+}
+
+dl div:last-child {
+  border-bottom: 0;
+}
+
+dt {
+  font-weight: 700;
+  text-align: right;
+}
+
+dd {
+  margin: 0;
+}
+
+footer {
+  padding: 1.25rem 1rem;
+  text-align: center;
+  color: #fff;
+  background: #111111;
+}
+
+footer p {
+  margin: 0.35rem 0;
+}
+
+#lastModified {
+  color: #ffd36a;
+}

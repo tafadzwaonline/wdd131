@@ -1,0 +1,51 @@
+@media (min-width: 800px) {
+  main {
+    position: relative;
+    padding-bottom: 3rem;
+  }
+
+  .hero {
+    position: relative;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(7, 26, 16, 0.34), rgba(7, 26, 16, 0.08));
+    pointer-events: none;
+  }
+
+  .hero img {
+    min-height: 620px;
+  }
+
+  .content-grid {
+    position: absolute;
+    inset: 2.5rem 0 auto;
+    width: min(100% - 3rem, 1180px);
+    padding-top: 0;
+    pointer-events: none;
+  }
+
+  .info-card {
+    max-width: 310px;
+    pointer-events: auto;
+  }
+
+  .data-card {
+    margin-bottom: 0;
+  }
+
+  .weather-card {
+    margin: 6rem 0 0 auto;
+  }
+
+  .weather-card h2::after {
+    content: " \26C5";
+  }
+
+  .weather-icon {
+    display: none;
+  }
+}
