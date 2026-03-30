@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted | WDD 131</title>
+  <meta
+    name="description"
+    content="Confirmation page for the product review form showing the submission count."
+  >
+  <meta name="author" content="Tatafdzwa Kahwai">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/review.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body class="review-page">
+  <header class="review-header">
+    <h1>Review Submitted</h1>
+  </header>
+
+  <main class="review-shell">
+    <section class="review-form confirmation-card">
+      <h2>Thank you for your review</h2>
+      <p id="confirmation-message">
+        Your feedback helps others make better product decisions.
+      </p>
+      <dl class="confirmation-list" id="submission-details"></dl>
+      <p class="review-count">Reviews completed: <strong id="reviewCount">0</strong></p>
+      <a class="submit-button return-link" href="form.html">Submit Another Review</a>
+    </section>
+  </main>
+
+  <footer class="review-footer">
+    <p>&copy;<span id="currentyear"></span> 🌸 Tatafdzwa Kahwai 🌸 Zimbabwe</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

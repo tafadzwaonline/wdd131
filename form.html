@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review | WDD 131</title>
+  <meta
+    name="description"
+    content="Submit a product review using a responsive form with dynamic product options."
+  >
+  <meta name="author" content="Tatafdzwa Kahwai">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body class="review-page">
+  <header class="review-header">
+    <h1>Product Review</h1>
+  </header>
+
+  <main class="review-shell">
+    <form class="review-form" method="get" action="review.html">
+      <div class="field-group">
+        <label for="productName">Product Name <span class="required">*</span></label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+      </div>
+
+      <fieldset class="field-group rating-group">
+        <legend>Overall Rating <span class="required">*</span></legend>
+        <div class="rating-options">
+          <label>
+            <span class="stars">&star;</span>
+            <span class="sr-only">1 star</span>
+            <input id="rating1" type="radio" name="overallRating" value="1" required>
+          </label>
+          <label>
+            <span class="stars">&star;&star;</span>
+            <span class="sr-only">2 stars</span>
+            <input id="rating2" type="radio" name="overallRating" value="2" required>
+          </label>
+          <label>
+            <span class="stars">&star;&star;&star;</span>
+            <span class="sr-only">3 stars</span>
+            <input id="rating3" type="radio" name="overallRating" value="3" required>
+          </label>
+          <label>
+            <span class="stars">&star;&star;&star;&star;</span>
+            <span class="sr-only">4 stars</span>
+            <input id="rating4" type="radio" name="overallRating" value="4" required>
+          </label>
+          <label>
+            <span class="stars">&star;&star;&star;&star;&star;</span>
+            <span class="sr-only">5 stars</span>
+            <input id="rating5" type="radio" name="overallRating" value="5" required>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="field-group">
+        <label for="installDate">Date of Installation <span class="required">*</span></label>
+        <input id="installDate" name="installDate" type="date" required>
+      </div>
+
+      <fieldset class="field-group">
+        <legend>Which features did you find useful in the product?</legend>
+        <p class="helper">(Check all that apply)</p>
+        <div class="checkbox-list">
+          <label for="durability">
+            <input id="durability" name="usefulFeatures" type="checkbox" value="Durability">
+            Durability
+          </label>
+          <label for="easeOfUse">
+            <input id="easeOfUse" name="usefulFeatures" type="checkbox" value="Ease of Use">
+            Ease of Use
+          </label>
+          <label for="performance">
+            <input id="performance" name="usefulFeatures" type="checkbox" value="Performance">
+            Performance
+          </label>
+          <label for="design">
+            <input id="design" name="usefulFeatures" type="checkbox" value="Design">
+            Design
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="field-group">
+        <label for="writtenReview">Written Review <span>(Optional)</span></label>
+        <textarea id="writtenReview" name="writtenReview" rows="6"></textarea>
+      </div>
+
+      <div class="field-group">
+        <label for="userName">Your Name <span>(Optional)</span></label>
+        <input id="userName" name="userName" type="text">
+      </div>
+
+      <input class="submit-button" type="submit" value="Post Review">
+    </form>
+  </main>
+
+  <footer class="review-footer">
+    <p>&copy;<span id="currentyear"></span> 🌸 Tatafdzwa Kahwai 🌸 Zimbabwe</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
