@@ -116,12 +116,18 @@ textarea {
   gap: 0.5rem;
 }
 
-.rating-options label {
+.rating-choice {
   display: grid;
   justify-items: center;
   gap: 0.35rem;
+}
+
+.rating-options label {
+  display: grid;
+  justify-items: center;
   margin-bottom: 0;
   text-align: center;
+  cursor: pointer;
 }
 
 .stars {
