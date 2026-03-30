@@ -123,16 +123,17 @@ textarea {
 }
 
 .rating-options label {
-  display: grid;
-  justify-items: center;
+  display: block;
   margin-bottom: 0;
   text-align: center;
   cursor: pointer;
+  font-size: 0.9rem;
 }
 
 .stars {
-  font-size: 1.25rem;
+  font-size: 1rem;
   letter-spacing: 0.1em;
+  color: #2a232a;
 }
 
 .checkbox-list {
