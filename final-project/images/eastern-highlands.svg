@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Eastern Highlands illustration</title>
+  <desc id="desc">Stylized mountain landscape with clouds and greenery.</desc>
+  <rect width="800" height="600" fill="#d9eef3"/>
+  <rect y="400" width="800" height="200" fill="#6f9c72"/>
+  <circle cx="650" cy="110" r="40" fill="#ffe19d"/>
+  <ellipse cx="170" cy="130" rx="80" ry="28" fill="#ffffff" opacity="0.92"/>
+  <ellipse cx="275" cy="160" rx="76" ry="24" fill="#ffffff" opacity="0.88"/>
+  <path d="M30 430 L220 190 L390 430 Z" fill="#5a7b76"/>
+  <path d="M220 430 L430 150 L620 430 Z" fill="#4e6d67"/>
+  <path d="M460 430 L650 220 L780 430 Z" fill="#709386"/>
+  <path d="M220 190 L278 280 L164 280 Z" fill="#edf4f7"/>
+  <path d="M430 150 L495 265 L365 265 Z" fill="#edf4f7"/>
+  <path d="M0 500 C120 450 260 520 410 470 S650 460 800 520 V600 H0 Z" fill="#407057"/>
+</svg>

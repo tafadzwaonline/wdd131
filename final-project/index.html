@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zimbabwe Travel Guide | Home</title>
+  <meta
+    name="description"
+    content="Explore a responsive Zimbabwe Travel Guide with destination highlights, trip planning tips, and interactive travel tools."
+  >
+  <meta name="author" content="Tatafdzwa Kahwai">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="brand-bar">
+      <a class="brand" href="index.html">Zimbabwe Travel Guide</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+    </div>
+    <nav id="site-nav" class="site-nav">
+      <a aria-current="page" href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="planner.html">Trip Planner</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Plan with confidence</p>
+        <h1>Discover memorable places across Zimbabwe</h1>
+        <p>
+          This guide introduces waterfall adventures, wildlife escapes, and heritage landmarks for
+          travelers who want a balanced and practical overview before they go.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="destinations.html">Browse Destinations</a>
+          <a class="button button-secondary" href="planner.html">Build My Trip</a>
+        </div>
+      </div>
+      <picture class="hero-media">
+        <source media="(min-width: 800px)" srcset="../images/zimbabwe-hero-large.webp">
+        <img
+          src="../images/zimbabwe-hero-small.webp"
+          alt="Scenic landscape representing travel in Zimbabwe"
+          width="960"
+          height="640"
+        >
+      </picture>
+    </section>
+
+    <section class="intro-grid">
+      <article class="panel stat-panel">
+        <h2>Why this site helps</h2>
+        <ul class="feature-list">
+          <li>Compare destinations by mood, activity, and best season.</li>
+          <li>Save favorites as you browse using a simple local travel shortlist.</li>
+          <li>Generate a suggested travel style based on your form choices.</li>
+        </ul>
+      </article>
+      <article class="panel tip-panel">
+        <h2>Travel focus</h2>
+        <p>
+          Zimbabwe offers a strong mix of nature, culture, and history, so this project groups
+          options for first-time visitors who want a clear starting point.
+        </p>
+        <p id="favorites-summary" class="callout"></p>
+      </article>
+    </section>
+
+    <section class="section-heading">
+      <div>
+        <p class="eyebrow">Featured locations</p>
+        <h2>Start with these traveler favorites</h2>
+      </div>
+      <a class="text-link" href="destinations.html">See the full guide</a>
+    </section>
+    <section id="featured-grid" class="card-grid" aria-label="Featured destinations"></section>
+
+    <section class="panel checklist">
+      <div>
+        <p class="eyebrow">Before you go</p>
+        <h2>Simple planning checklist</h2>
+      </div>
+      <div class="checklist-grid">
+        <article>
+          <h3>Pack smart</h3>
+          <p>Bring layered clothing, sun protection, and comfortable walking shoes.</p>
+        </article>
+        <article>
+          <h3>Choose a season</h3>
+          <p>Dry months are often better for game viewing, while high water seasons enhance falls.</p>
+        </article>
+        <article>
+          <h3>Balance your trip</h3>
+          <p>Combine one adventure stop, one heritage stop, and one slower scenic destination.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy;<span id="currentyear"></span> Tatafdzwa Kahwai | Zimbabwe Travel Guide</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>

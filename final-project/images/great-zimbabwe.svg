@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Great Zimbabwe illustration</title>
+  <desc id="desc">Stylized stone walls and warm landscape.</desc>
+  <rect width="800" height="600" fill="#f5e4c7"/>
+  <rect y="380" width="800" height="220" fill="#b88449"/>
+  <path d="M110 380 q60 -140 180 -130 q110 0 170 130z" fill="#7f8f59"/>
+  <rect x="120" y="240" width="540" height="170" rx="24" fill="#8f7b62"/>
+  <rect x="170" y="200" width="420" height="80" rx="18" fill="#9e8a71"/>
+  <rect x="340" y="150" width="120" height="130" rx="14" fill="#786651"/>
+  <circle cx="680" cy="110" r="44" fill="#ffcf7a"/>
+  <path d="M0 440 C130 420 300 460 460 430 S670 410 800 450 V600 H0 Z" fill="#99713c"/>
+</svg>

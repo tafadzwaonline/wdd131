@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Hwange National Park illustration</title>
+  <desc id="desc">Stylized savanna scene with elephant silhouettes.</desc>
+  <rect width="800" height="600" fill="#f4dec0"/>
+  <rect y="320" width="800" height="280" fill="#ba8d49"/>
+  <circle cx="670" cy="120" r="48" fill="#ffd08c"/>
+  <path d="M0 350 C130 300 240 330 360 300 S620 330 800 290 V600 H0 Z" fill="#8f6a3b"/>
+  <path d="M130 330 l35 -120 h20 l-30 120z" fill="#5a6b35"/>
+  <circle cx="175" cy="192" r="34" fill="#6f8540"/>
+  <path d="M570 380 h85 a28 28 0 0 1 28 28 v30 h-141 v-30 a28 28 0 0 1 28 -28z" fill="#485259"/>
+  <circle cx="575" cy="405" r="24" fill="#485259"/>
+  <circle cx="650" cy="405" r="24" fill="#485259"/>
+  <rect x="548" y="430" width="16" height="80" fill="#485259"/>
+  <rect x="578" y="430" width="16" height="80" fill="#485259"/>
+  <rect x="625" y="430" width="16" height="80" fill="#485259"/>
+  <rect x="655" y="430" width="16" height="80" fill="#485259"/>
+  <path d="M683 410 q40 -10 48 22 q-40 8 -48 2z" fill="#485259"/>
+</svg>

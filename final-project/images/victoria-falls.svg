@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Victoria Falls illustration</title>
+  <desc id="desc">Stylized waterfall, gorge, river, and mist.</desc>
+  <rect width="800" height="600" fill="#d7ecf6"/>
+  <rect y="360" width="800" height="240" fill="#4a8c7f"/>
+  <rect x="100" y="150" width="220" height="260" rx="18" fill="#b37037"/>
+  <rect x="320" y="150" width="40" height="260" fill="#f5fbff"/>
+  <rect x="390" y="150" width="40" height="260" fill="#f5fbff"/>
+  <rect x="460" y="150" width="40" height="260" fill="#f5fbff"/>
+  <rect x="530" y="150" width="170" height="260" rx="18" fill="#915d2d"/>
+  <ellipse cx="410" cy="410" rx="210" ry="42" fill="#bce5f4"/>
+  <circle cx="360" cy="140" r="34" fill="#ffd889"/>
+  <path d="M70 470 C200 420 320 440 420 470 S650 530 760 470 V600 H70 Z" fill="#256f73"/>
+</svg>

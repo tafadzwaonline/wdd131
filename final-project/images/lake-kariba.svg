@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Lake Kariba illustration</title>
+  <desc id="desc">Stylized lake scene with water, hills, and a boat.</desc>
+  <rect width="800" height="600" fill="#cfe6ee"/>
+  <rect y="320" width="800" height="280" fill="#5c88aa"/>
+  <circle cx="135" cy="100" r="38" fill="#ffe0a0"/>
+  <path d="M0 350 C120 260 260 280 380 340 S640 360 800 270 V360 H0 Z" fill="#6f8b7b"/>
+  <path d="M0 390 C150 340 320 430 470 380 S650 350 800 410 V600 H0 Z" fill="#4b7490"/>
+  <path d="M420 365 h110 l-28 36 h-140 z" fill="#7e4f2b"/>
+  <rect x="474" y="295" width="8" height="70" fill="#7e4f2b"/>
+  <path d="M482 300 l72 38 h-72z" fill="#f4f2e8"/>
+</svg>

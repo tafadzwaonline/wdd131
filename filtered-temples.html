@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Temple Album | WDD 131</title>
+  <meta name="description" content="A responsive filtered temple album with lazy-loaded images and JavaScript-generated temple cards.">
+  <meta name="author" content="Tatafdzwa Kahwai">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body class="temple-page">
+  <header class="page-header">
+    <div class="header-top">
+      <span class="site-title">Temple Album</span>
+      <button
+        id="nav-toggle"
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open navigation menu"
+      >
+        <span class="icon" aria-hidden="true">&#9776;</span>
+      </button>
+    </div>
+
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+      <a href="#" class="nav-link" data-filter="home" aria-current="page">Home</a>
+      <a href="#" class="nav-link" data-filter="old">Old</a>
+      <a href="#" class="nav-link" data-filter="new">New</a>
+      <a href="#" class="nav-link" data-filter="large">Large</a>
+      <a href="#" class="nav-link" data-filter="small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="page-title">Home</h1>
+
+    <section id="temple-gallery" class="gallery" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Tatafdzwa Kahwai | Zimbabwe</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

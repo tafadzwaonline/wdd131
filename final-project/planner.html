@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zimbabwe Travel Guide | Trip Planner</title>
+  <meta
+    name="description"
+    content="Plan a Zimbabwe trip with a responsive travel form and a saved recommendation powered by JavaScript and localStorage."
+  >
+  <meta name="author" content="Tatafdzwa Kahwai">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+  <script src="scripts/planner.js" defer></script>
+</head>
+<body data-page="planner">
+  <header class="site-header">
+    <div class="brand-bar">
+      <a class="brand" href="index.html">Zimbabwe Travel Guide</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+    </div>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a aria-current="page" href="planner.html">Trip Planner</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <p class="eyebrow">Interactive planner</p>
+      <h1>Build a travel idea that matches your interests</h1>
+      <p>
+        Complete the form to receive a suggested destination focus. Your most recent plan is saved
+        in your browser for easy review later.
+      </p>
+    </section>
+
+    <section class="planner-layout">
+      <section class="panel">
+        <h2>Trip preference form</h2>
+        <form id="trip-form" class="trip-form" method="get">
+          <label>
+            Name
+            <input id="traveler-name" name="traveler-name" type="text" required>
+          </label>
+          <label>
+            Preferred season
+            <select id="travel-season" name="travel-season" required>
+              <option value="">Choose one</option>
+              <option value="dry">Dry season</option>
+              <option value="green">Green season</option>
+              <option value="year-round">Year-round flexibility</option>
+            </select>
+          </label>
+          <fieldset>
+            <legend>Main interest</legend>
+            <label><input type="radio" name="interest" value="wildlife" required> Wildlife</label>
+            <label><input type="radio" name="interest" value="heritage"> Heritage</label>
+            <label><input type="radio" name="interest" value="nature"> Nature scenery</label>
+          </fieldset>
+          <label>
+            Trip pace
+            <select id="trip-pace" name="trip-pace" required>
+              <option value="">Choose one</option>
+              <option value="relaxed">Relaxed</option>
+              <option value="balanced">Balanced</option>
+              <option value="active">Active</option>
+            </select>
+          </label>
+          <label class="checkbox-row">
+            <input id="want-saved-favorites" name="want-saved-favorites" type="checkbox">
+            Include my saved favorites in the suggestion
+          </label>
+          <button class="button" type="submit">Create Suggestion</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Your recommendation</h2>
+        <div id="planner-output" class="planner-output">
+          <p>Your generated recommendation will appear here after you submit the form.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy;<span id="currentyear"></span> Tatafdzwa Kahwai | Zimbabwe Travel Guide</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>

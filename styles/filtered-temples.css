@@ -1,0 +1,164 @@
+.temple-page {
+  --album-purple: #4f147b;
+  --album-purple-dark: #3e0f63;
+  --album-text: #151515;
+  --album-caption: #5b1d83;
+  background: #ffffff;
+  color: var(--album-text);
+}
+
+.page-header {
+  width: min(1100px, calc(100% - 1rem));
+  margin: 0.5rem auto 0;
+  background: var(--album-purple);
+  box-shadow: none;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 0.85rem 0.8rem;
+}
+
+.site-title {
+  color: #ffffff;
+  font-family: "Outfit", Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.nav-toggle {
+  width: auto;
+  height: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1;
+  box-shadow: none;
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus-visible {
+  background: transparent;
+  transform: none;
+}
+
+.primary-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding: 0 0 0.75rem;
+  background: var(--album-purple);
+  border-bottom: none;
+}
+
+.primary-nav.open {
+  display: flex;
+}
+
+.nav-link {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 0;
+  background: transparent;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  background: var(--album-purple-dark);
+  color: #ffffff;
+  transform: none;
+  outline: none;
+}
+
+.temple-page main {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 1.75rem auto 2.5rem;
+  display: block;
+}
+
+.temple-page h1 {
+  margin: 0 0 1.25rem;
+  color: #111111;
+  text-align: center;
+  font-family: "Outfit", Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 1.75rem;
+}
+
+.temple-card {
+  width: 100%;
+  max-width: 360px;
+  margin: 0;
+  background: #ffffff;
+  border: 1px solid #e4d7ef;
+  border-radius: 18px;
+  box-shadow: 0 14px 32px rgba(79, 20, 123, 0.12);
+  overflow: hidden;
+}
+
+.temple-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-bottom: 1px solid #eee4f7;
+}
+
+.temple-card-content {
+  padding: 1rem 1rem 1.15rem;
+  text-align: center;
+}
+
+.temple-card h2 {
+  margin-bottom: 0.75rem;
+  color: var(--album-caption);
+  font-family: "Outfit", Arial, sans-serif;
+  font-size: 1.25rem;
+}
+
+.temple-card p {
+  margin: 0.35rem 0;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.temple-card .label {
+  font-weight: 700;
+}
+
+.temple-page footer {
+  width: min(1100px, calc(100% - 1rem));
+  margin: 0 auto 1rem;
+  padding: 0.6rem 1rem;
+  background: var(--album-purple);
+  color: #ffffff;
+}
+
+.temple-page footer p {
+  margin: 0.12rem 0;
+  font-size: 0.72rem;
+  line-height: 1.2;
+}
+
+.temple-page #lastModified {
+  color: #f4d8ff;
+}

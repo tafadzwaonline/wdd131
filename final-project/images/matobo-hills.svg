@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Matobo Hills illustration</title>
+  <desc id="desc">Stylized rounded granite hills at sunset.</desc>
+  <rect width="800" height="600" fill="#f6d7b3"/>
+  <rect y="390" width="800" height="210" fill="#b97e4d"/>
+  <circle cx="650" cy="120" r="54" fill="#ffcb75"/>
+  <ellipse cx="170" cy="390" rx="140" ry="110" fill="#8f6343"/>
+  <ellipse cx="330" cy="380" rx="160" ry="130" fill="#9d7050"/>
+  <ellipse cx="520" cy="395" rx="150" ry="100" fill="#7d573d"/>
+  <ellipse cx="655" cy="388" rx="120" ry="95" fill="#a57a56"/>
+  <path d="M0 470 C140 430 270 510 420 470 S650 430 800 480 V600 H0 Z" fill="#7f5c39"/>
+</svg>

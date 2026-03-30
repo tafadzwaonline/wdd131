@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zimbabwe Travel Guide | Destinations</title>
+  <meta
+    name="description"
+    content="Filter destination ideas in Zimbabwe by travel mood, best season, and experience type."
+  >
+  <meta name="author" content="Tatafdzwa Kahwai">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body data-page="destinations">
+  <header class="site-header">
+    <div class="brand-bar">
+      <a class="brand" href="index.html">Zimbabwe Travel Guide</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+    </div>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a aria-current="page" href="destinations.html">Destinations</a>
+      <a href="planner.html">Trip Planner</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <p class="eyebrow">Explore options</p>
+      <h1>Compare destinations by travel style</h1>
+      <p>
+        Use the filters to narrow places that match your interests. Each card can also be saved to
+        your favorites list.
+      </p>
+    </section>
+
+    <section class="panel filter-panel">
+      <h2>Destination filters</h2>
+      <form class="filter-form" aria-label="Destination filters">
+        <label>
+          Region
+          <select id="region-filter" name="region">
+            <option value="all">All regions</option>
+            <option value="north">North</option>
+            <option value="south">South</option>
+            <option value="west">West</option>
+          </select>
+        </label>
+        <label>
+          Experience
+          <select id="type-filter" name="type">
+            <option value="all">All experiences</option>
+            <option value="nature">Nature</option>
+            <option value="wildlife">Wildlife</option>
+            <option value="heritage">Heritage</option>
+          </select>
+        </label>
+        <label>
+          Best season
+          <select id="season-filter" name="season">
+            <option value="all">Any season</option>
+            <option value="dry">Dry season</option>
+            <option value="green">Green season</option>
+            <option value="year-round">Year-round</option>
+          </select>
+        </label>
+      </form>
+      <p id="results-summary" class="callout"></p>
+    </section>
+
+    <section id="destinations-grid" class="card-grid" aria-label="Destination list"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy;<span id="currentyear"></span> Tatafdzwa Kahwai | Zimbabwe Travel Guide</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>
