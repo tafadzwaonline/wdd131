@@ -19,6 +19,7 @@
   <script src="scripts/site.js" defer></script>
 </head>
 <body data-page="destinations">
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="brand-bar">
       <a class="brand" href="index.html">Zimbabwe Travel Guide</a>
@@ -26,14 +27,14 @@
         Menu
       </button>
     </div>
-    <nav id="site-nav" class="site-nav">
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a aria-current="page" href="destinations.html">Destinations</a>
       <a href="planner.html">Trip Planner</a>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="page-banner">
       <p class="eyebrow">Explore options</p>
       <h1>Compare destinations by travel style</h1>
@@ -74,7 +75,7 @@
           </select>
         </label>
       </form>
-      <p id="results-summary" class="callout"></p>
+      <p id="results-summary" class="callout" aria-live="polite"></p>
     </section>
 
     <section id="destinations-grid" class="card-grid" aria-label="Destination list"></section>

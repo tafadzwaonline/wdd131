@@ -31,6 +31,23 @@ body {
     linear-gradient(180deg, #fcf7ef 0%, var(--sand) 100%);
 }
 
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 30;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--forest-dark);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -365,6 +382,11 @@ fieldset label {
   display: flex;
   gap: 0.7rem;
   align-items: center;
+}
+
+.form-note {
+  margin: -0.25rem 0 0;
+  color: var(--muted);
 }
 
 .planner-output {

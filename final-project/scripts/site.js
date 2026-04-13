@@ -96,6 +96,12 @@ function toggleFavorite(destinationId) {
 function createCardMarkup(destination, favorites) {
   const isSaved = favorites.includes(destination.id);
   const buttonLabel = isSaved ? "Remove from favorites" : "Save to favorites";
+  const typeLabel = destination.type.charAt(0).toUpperCase() + destination.type.slice(1);
+  const seasonLabel = destination.season === "year-round"
+    ? "Year-round"
+    : `${destination.season.charAt(0).toUpperCase() + destination.season.slice(1)} season`;
+  const regionLabel = destination.region.charAt(0).toUpperCase() + destination.region.slice(1);
+  const paceLabel = destination.pace.charAt(0).toUpperCase() + destination.pace.slice(1);
 
   return `
     <article class="card">
@@ -109,14 +115,14 @@ function createCardMarkup(destination, favorites) {
       >
       <div class="card-content">
         <div class="tag-row">
-          <span class="tag">${destination.type}</span>
-          <span class="tag">${destination.season}</span>
+          <span class="tag">${typeLabel}</span>
+          <span class="tag">${seasonLabel}</span>
         </div>
         <h3>${destination.name}</h3>
         <p>${destination.summary}</p>
         <div class="meta-row">
-          <span class="meta">Region: ${destination.region}</span>
-          <span class="meta">Pace: ${destination.pace}</span>
+          <span class="meta">Region: ${regionLabel}</span>
+          <span class="meta">Pace: ${paceLabel}</span>
         </div>
         <button class="button favorite-button" type="button" data-favorite="${destination.id}">
           ${buttonLabel}
@@ -164,7 +170,8 @@ function updateFavoritesSummary() {
       .filter((destination) => favorites.includes(destination.id))
       .map((destination) => destination.name)
       .join(", ");
-    summary.textContent = `Saved favorites: ${savedNames}.`;
+    const noun = favorites.length === 1 ? "favorite" : "favorites";
+    summary.textContent = `You have ${favorites.length} saved ${noun}: ${savedNames}.`;
   }
 }
 
@@ -205,7 +212,8 @@ function renderDestinations() {
   grid.innerHTML = filteredDestinations
     .map((destination) => createCardMarkup(destination, favorites))
     .join("");
-  summary.textContent = `${filteredDestinations.length} destination(s) found.`;
+  const noun = filteredDestinations.length === 1 ? "destination" : "destinations";
+  summary.textContent = `${filteredDestinations.length} ${noun} found.`;
 
   attachFavoriteEvents();
 }
@@ -227,6 +235,20 @@ function setupMenu() {
   button.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("open");
     button.setAttribute("aria-expanded", `${isOpen}`);
+  });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      button.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 720) {
+      nav.classList.remove("open");
+      button.setAttribute("aria-expanded", "false");
+    }
   });
 }
 

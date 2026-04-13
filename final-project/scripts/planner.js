@@ -40,6 +40,18 @@ function buildRecommendationMarkup(plan) {
   `;
 }
 
+function populateSavedPlan(plan) {
+  document.querySelector("#traveler-name").value = plan.name;
+  document.querySelector("#travel-season").value = plan.season;
+  document.querySelector("#trip-pace").value = plan.pace;
+  document.querySelector("#want-saved-favorites").checked = plan.includeFavorites;
+
+  const selectedInterest = document.querySelector(`input[name="interest"][value="${plan.interest}"]`);
+  if (selectedInterest) {
+    selectedInterest.checked = true;
+  }
+}
+
 function renderSavedPlan() {
   const output = document.querySelector("#planner-output");
   if (!output) {
@@ -51,6 +63,7 @@ function renderSavedPlan() {
     return;
   }
 
+  populateSavedPlan(savedPlan);
   output.innerHTML = buildRecommendationMarkup(savedPlan);
 }
 
@@ -60,9 +73,21 @@ function handlePlannerSubmit(event) {
   const form = event.currentTarget;
   const name = document.querySelector("#traveler-name").value.trim();
   const season = document.querySelector("#travel-season").value;
-  const interest = form.querySelector('input[name="interest"]:checked').value;
+  const selectedInterest = form.querySelector('input[name="interest"]:checked');
   const pace = document.querySelector("#trip-pace").value;
   const includeFavorites = document.querySelector("#want-saved-favorites").checked;
+
+  if (!name || !season || !pace || !selectedInterest) {
+    document.querySelector("#planner-output").innerHTML = `
+      <article>
+        <h3>Complete the form first</h3>
+        <p>Please fill in every required field before generating your suggestion.</p>
+      </article>
+    `;
+    return;
+  }
+
+  const interest = selectedInterest.value;
 
   const favoriteIds = JSON.parse(localStorage.getItem("ztg-favorites") ?? "[]");
   const favoriteNames = destinations

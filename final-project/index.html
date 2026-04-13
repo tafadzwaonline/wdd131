@@ -19,6 +19,7 @@
   <script src="scripts/site.js" defer></script>
 </head>
 <body data-page="home">
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="brand-bar">
       <a class="brand" href="index.html">Zimbabwe Travel Guide</a>
@@ -26,14 +27,14 @@
         Menu
       </button>
     </div>
-    <nav id="site-nav" class="site-nav">
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
       <a aria-current="page" href="index.html">Home</a>
       <a href="destinations.html">Destinations</a>
       <a href="planner.html">Trip Planner</a>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Plan with confidence</p>
@@ -73,7 +74,7 @@
           Zimbabwe offers a strong mix of nature, culture, and history, so this project groups
           options for first-time visitors who want a clear starting point.
         </p>
-        <p id="favorites-summary" class="callout"></p>
+        <p id="favorites-summary" class="callout" aria-live="polite"></p>
       </article>
     </section>
 

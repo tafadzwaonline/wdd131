@@ -20,6 +20,7 @@
   <script src="scripts/planner.js" defer></script>
 </head>
 <body data-page="planner">
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="brand-bar">
       <a class="brand" href="index.html">Zimbabwe Travel Guide</a>
@@ -27,14 +28,14 @@
         Menu
       </button>
     </div>
-    <nav id="site-nav" class="site-nav">
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="destinations.html">Destinations</a>
       <a aria-current="page" href="planner.html">Trip Planner</a>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="page-banner">
       <p class="eyebrow">Interactive planner</p>
       <h1>Build a travel idea that matches your interests</h1>
@@ -50,7 +51,7 @@
         <form id="trip-form" class="trip-form" method="get">
           <label>
             Name
-            <input id="traveler-name" name="traveler-name" type="text" required>
+            <input id="traveler-name" name="traveler-name" type="text" autocomplete="name" minlength="2" required>
           </label>
           <label>
             Preferred season
@@ -80,13 +81,14 @@
             <input id="want-saved-favorites" name="want-saved-favorites" type="checkbox">
             Include my saved favorites in the suggestion
           </label>
+          <p class="form-note">Your latest recommendation is saved in this browser using localStorage.</p>
           <button class="button" type="submit">Create Suggestion</button>
         </form>
       </section>
 
       <section class="panel">
         <h2>Your recommendation</h2>
-        <div id="planner-output" class="planner-output">
+        <div id="planner-output" class="planner-output" aria-live="polite">
           <p>Your generated recommendation will appear here after you submit the form.</p>
         </div>
       </section>
